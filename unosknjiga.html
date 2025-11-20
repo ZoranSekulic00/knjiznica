@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--link rel="stylesheet" href="css/stilovi.css"-->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+    <title>Početna web stranica</title>
+    <script>
+        function provjeri(){
+            
+            let autor = document.getElementById("autor").value
+            let naslov = document.getElementById("naslov").value
+            document.getElementById("provjera").innerHTML = "<div>Autor:"+autor+"</div><div>Naslov:"+naslov+"</div>"
+            console.log(autor)
+
+        }
+        function posalji(){
+        alert("Poslano!")
+}
+    </script>
+</head>
+<body>
+    <nav class="w3-bar w3-black">
+        <a href="pocetna.html" class="w3-bar-item w3-button w3-mobile">Početna stranica</a>
+        <a href="korisnici.html" class="w3-bar-item w3-button w3-mobile">Korisnici knjižnice</a>
+        <a href="multimedija.html" class="w3-bar-item w3-button w3-mobile">Multimedija</a>
+        <a href="obavijesti.html" class="w3-bar-item w3-button w3-mobile">Obavijesti</a>
+        <a href="unosknjiga.html" class="w3-bar-item w3-button w3-mobile">Unos knjiga</a>
+    </nav>
+    <div class="w3-container w3-red">
+        <h1>Knjižnica</h1>
+    </div>
+    <div class="w3-container w3-pale-red">
+        <h2>Unos knjiga</h2>
+    </div>
+    <form class="w3-container" onsubmit="posalji()">
+
+<label class="w3-text-red"><b>Autor</b></label>
+ <input class="w3-input w3-border" type="text" id="autor" name="autor" onkeyup="provjeri()">
+<label class="w3-text-red"><b>Naslov</b></label>
+<input class="w3-input w3-border" type="text" id="naslov" name="naslov" onkeyup="provjeri()">
+
+<button class="w3-btn w3-black">Spremi</button>
+
+</form>
+    <div id="provjera"></div>
+    <footer class="w3-container w3-red" id="okvir">
+        <h5>Veleučilište u Rijeci, Stručni studij Telematike</h5>
+    </footer>
+</body>
+</html>

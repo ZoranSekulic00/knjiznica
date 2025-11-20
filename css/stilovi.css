@@ -1,0 +1,19 @@
+h1 {
+    font-size: 40px;
+    color: blue;
+}
+h2 {
+    font-size: 30px;
+    color: lightskyblue;
+}
+.tijelo {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-width: 1px;
+    border-style: solid;
+}
+#okvir {
+    font-style: italic;
+    border-color: aqua;
+    border-style: solid;
+    padding: 10px 1px;
+}
